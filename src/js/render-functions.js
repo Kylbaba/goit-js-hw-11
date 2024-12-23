@@ -1,7 +1,7 @@
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
-const gallery = document.querySelector('.gallery');
+const g = document.querySelector('.gallery');
 let box;
 export function gallery(images) {
   const element = images
@@ -27,7 +27,7 @@ export function gallery(images) {
     `
     )
     .join('');
-  gallery.innerHTML = element;
+  g.innerHTML = element;
   if (!box) {
     box = new SimpleLightbox('.gallery-item', {
       captionsData: 'alt',
@@ -39,5 +39,5 @@ export function gallery(images) {
 }
 
 export function clear() {
-  gallery.innerHTML = '';
+  g.innerHTML = '';
 }
