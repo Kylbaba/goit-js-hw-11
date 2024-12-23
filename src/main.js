@@ -1,3 +1,4 @@
+// import './styles.css';
 import { back } from './js/pixabay-api.js';
 // import { gallery, clear } from './js/render-functions.js';
 import iziToast from 'izitoast';
